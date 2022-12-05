@@ -9,7 +9,7 @@ const Home = props => (
       <input className="form-control"/>
     </div>
     <div className="mb-2">
-      <SelectControl></SelectControl>
+      <SelectControl items={props.items}></SelectControl>
     </div>
 
     <Button></Button>
@@ -18,7 +18,8 @@ const Home = props => (
 )
 
 Home.defaultProps = {
-  name: 'David'
+  name: 'David',
+  items: []
 }
 
 export default Home;

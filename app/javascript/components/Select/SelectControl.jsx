@@ -1,14 +1,12 @@
 import React from 'react'
 import Select from 'react-select'
 
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-]
-
-const SelectControl = () => (
-  <Select options={options} />
+const SelectControl = (props) => (
+  <Select options={props.items} />
 )
+
+SelectControl.defaultProps = {
+  items: []
+}
 
 export default SelectControl

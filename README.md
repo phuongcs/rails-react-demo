@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 7 webpacker with Reactjs on Frontend
 
-Things you may want to cover:
+## System
 
-* Ruby version
+- Ruby version v3.1.3
+- Rails v7.0.4
 
-* System dependencies
+## Installation
 
-* Configuration
+```
+bundle
+yarn
+```
 
-* Database creation
+## Run
 
-* Database initialization
+```
+rails s
+```
 
-* How to run the test suite
+## Important Gems
+### react-rails
+for rendering React component with prop from controller
 
-* Services (job queues, cache servers, search engines, etc.)
+generate react component
+```
+rails g react:component home
+```
+this will generate Home component.
 
-* Deployment instructions
-
-* ...

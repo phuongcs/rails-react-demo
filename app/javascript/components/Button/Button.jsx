@@ -5,9 +5,7 @@ import './Button.scss';
 class Button extends React.Component {
   render () {
     return (
-      <div>
-        <button className="btn btn-success">Submit</button>
-      </div>
+      <button className="btn btn-success">Submit</button>
     );
   }
 }
