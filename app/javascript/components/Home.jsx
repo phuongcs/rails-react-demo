@@ -3,11 +3,18 @@ import Button from "./Button/Button";
 import SelectControl from "./Select/SelectControl";
 
 const Home = props => (
-  <>
-    <div>Hello {props.name}!</div>
+  <div className="form-group">
+    <div className="mb-2">Hello {props.name}!</div>
+    <div className="mb-2">
+      <input className="form-control"/>
+    </div>
+    <div className="mb-2">
+      <SelectControl></SelectControl>
+    </div>
+
     <Button></Button>
-    <SelectControl></SelectControl>
-  </>
+
+  </div>
 )
 
 Home.defaultProps = {

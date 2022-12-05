@@ -6,7 +6,7 @@ class Button extends React.Component {
   render () {
     return (
       <div>
-        <button className="btn-orange">Test button</button>
+        <button className="btn btn-success">Submit</button>
       </div>
     );
   }
