@@ -29,6 +29,8 @@ yarn
 rails s
 ```
 
+the web is served on http://localhost:3000
+
 ## Important Gems
 ### react-rails
 for rendering React component with props from controller
