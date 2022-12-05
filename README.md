@@ -6,11 +6,20 @@ Rails 7 webpacker with Reactjs on Frontend
 
 - Ruby version v3.1.3
 - Rails v7.0.4
+- node v14.21.1
 
 ## Installation
 
+install yarn
+```
+npm i -g yarn
+```
+
+install dependencies:
 ```
 bundle
+```
+```
 yarn
 ```
 
