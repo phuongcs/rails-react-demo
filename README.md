@@ -22,11 +22,14 @@ rails s
 
 ## Important Gems
 ### react-rails
-for rendering React component with prop from controller
+for rendering React component with props from controller
 
-generate react component
+generate react component:
 ```
-rails g react:component home
+rails g react:component button
 ```
-this will generate Home component.
+this will generate Button component.
 
+## Important 3rd component on FE
+### select-react package
+this package help with rendering dropdown list.
