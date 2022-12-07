@@ -21,5 +21,8 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "build": "./bin/webpack-dev-server"
   }
 }
