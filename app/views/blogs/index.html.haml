@@ -1,0 +1,15 @@
+.container
+  .p-3
+    .py-3.d-flex.justify-content-between
+      %h2 List of blogs
+      %button.btn.btn-success Create Blog
+
+    .list-group.w-auto
+      - @blogs.each do | blog |
+        %a.list-group-item.list-group-item-action.d-flex.gap-3.py-3
+          %img.rounded-circle.flex-shrink-0{src: "https://github.com/twbs.png", width: "32", height: "32"}
+          .d-flex.gap-2.w-100.justify-content-between
+            %div
+              %h6.mb-0= blog.title
+              %p.mb-0.opacity-75= blog.content
+            %small.opacity-50.text-nowrap now
