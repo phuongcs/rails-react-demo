@@ -1,8 +1,10 @@
 .container
   .p-3
     .py-3.d-flex.justify-content-between
-      %h2 List of blogs
-      %button.btn.btn-success Create Blog
+      %div
+        %h2 List of blogs
+      %div
+        %a.btn.btn-success{href: "blogs/new"} Create Blog
 
     .list-group.w-auto
       - @blogs.each do | blog |

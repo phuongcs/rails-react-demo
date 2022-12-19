@@ -6,11 +6,12 @@ class BlogsController < ApplicationController
   end
 
   def new
-
+    @categories = Category.all
   end
 
   def create
     @blog = Blog.create permitted_params
+    index
     render :index
   end
 
@@ -27,6 +28,6 @@ class BlogsController < ApplicationController
   end
 
   def permitted_params
-    params.require(:blog).permit(:title, :content)
+    params.require(:blog).permit(:title, :content, :category_id)
   end
 end

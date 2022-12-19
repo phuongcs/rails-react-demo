@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from "./Button/Button";
 import SelectControl from "./Select/SelectControl";
+import SubmitButton from "./Button/SubmitButton";
 
 const Home = props => (
   <div className="form-group">
@@ -12,7 +12,7 @@ const Home = props => (
       <SelectControl items={props.items}></SelectControl>
     </div>
 
-    <Button></Button>
+    <SubmitButton></SubmitButton>
 
   </div>
 )
