@@ -14,10 +14,10 @@
             %div
               %h6.mb-0= blog.title
               %p.mb-0.opacity-75= blog.content
-            %img.pointer{src: "trash.svg", width: 24, onclick: "delete(event)", id: "#{blog.id}"}
+            %img.pointer{src: "trash.svg", width: 24, onclick: "remove(event)", id: "#{blog.id}"}
 
 :javascript
-  function delete(e) {
+  function remove(e) {
   e.preventDefault();
     console.log('test event', e.target.id);
     const id = e.target.id;
