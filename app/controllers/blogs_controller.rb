@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  before_action :set_blog, only: %i[ show update ]
+  before_action :set_blog, only: %i[ show update destroy ]
 
   def index
     @blogs = Blog.all
@@ -21,6 +21,10 @@ class BlogsController < ApplicationController
 
   def show
 
+  end
+
+  def destroy
+    @blog.destroy
   end
 
   def set_blog

@@ -8,10 +8,25 @@
 
     .list-group.w-auto
       - @blogs.each do | blog |
-        %a.list-group-item.list-group-item-action.d-flex.gap-3.py-3
+        %a.list-group-item.list-group-item-action.d-flex.gap-3.py-3{href: "blogs/#{blog.id}"}
           %img.rounded-circle.flex-shrink-0{src: "https://github.com/twbs.png", width: "32", height: "32"}
           .d-flex.gap-2.w-100.justify-content-between
             %div
               %h6.mb-0= blog.title
               %p.mb-0.opacity-75= blog.content
-            %small.opacity-50.text-nowrap now
+            %img.pointer{src: "trash.svg", width: 24, onclick: "delete(event)", id: "#{blog.id}"}
+
+:javascript
+  function delete(e) {
+  e.preventDefault();
+    console.log('test event', e.target.id);
+    const id = e.target.id;
+    fetch('/blogs/' + id, {
+      method: 'delete',
+      redirect: 'follow'
+    }).then(res => {
+      console.log('response: ', res);
+      location.reload();
+    });
+  }
+

@@ -1,0 +1,11 @@
+.container
+  .p-3.border.rounded.mt-5
+    .p-3
+      %label Title
+      %p= @blog.title
+    .p-3
+      %label Content
+      %p= @blog.content
+    .p-3
+      %label Category
+      %p= @blog.category&.name
